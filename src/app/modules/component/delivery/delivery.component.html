@@ -1,0 +1,124 @@
+<div style="height: 800px; padding-top: 80px;" class="container">
+    <div class="delivery-box">
+        <h2>Delivery Form</h2>
+        <form>
+            <div class="form-group">
+                <input
+                required
+                minlength="4"
+                maxlength="30"
+                ngModel
+                name="studentName"
+                #studentName="ngModel"
+                id="studentName"
+                type="text"
+                class="form-control">
+                <label for="studentName">Student Name</label>
+            </div>
+            <div
+                class="alert alert-danger"
+                *ngIf="studentName.touched && !studentName.valid">
+                <div *ngIf="studentName.errors.required">
+                    Student name is required
+                </div>
+                <div *ngIf="studentName.errors.minlength">
+                    Student name must be more than 4 characters
+                </div>
+                <div *ngIf="studentName.errors.maxlength">
+                    Student name must be less than 30 characters
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <input
+                    required
+                    minlength="4"
+                    maxlength="30"
+                    ngModel
+                    name="school"
+                    #school="ngModel"
+                    id="school"
+                    type="text"
+                    class="form-control">
+                    <label for="school">School</label>
+                </div>
+                <div
+                    class="alert alert-danger"
+                    *ngIf="school.touched && !studentName.valid">
+                    <div *ngIf="school.errors.required">
+                        School name is required
+                    </div>
+                    <div *ngIf="school.errors.minlength">
+                        School name must be more than 4 characters
+                    </div>
+                    <div *ngIf="school.errors.maxlength">
+                        School name must be less than 30 characters
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <input
+                    required
+                    minlength="4"
+                    maxlength="30"
+                    ngModel
+                    name="idStudent"
+                    #idStudent="ngModel"
+                    id="idStudent"
+                    type="text"
+                    class="form-control">
+                    <label for="idStudent">Student ID</label>
+                </div>
+                <div
+                    class="alert alert-danger"
+                    *ngIf="idStudent.touched && !studentName.valid">
+                    <div *ngIf="idStudent.errors.required">
+                        Student ID is required
+                    </div>
+                    <div *ngIf="idStudent.errors.minlength">
+                        Student ID must be more than 4 characters
+                    </div>
+                    <div *ngIf="idStudent.errors.maxlength">
+                        Student ID must be less than 30 characters
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <input
+                    required
+                    minlength="10"
+                    maxlength="12"
+                    ngModel
+                    name="contact"
+                    #contact="ngModel"
+                    id="contact"
+                    type="text"
+                    class="form-control">
+                    <label for="contact">Parent Contact</label>
+                </div>
+                <div
+                    class="alert alert-danger"
+                    *ngIf="contact.touched && !contact.valid">
+                    <div *ngIf="contact.errors.required">
+                        Contact is required
+                    </div>
+                    <div *ngIf="contact.errors.minlength">
+                        Contact must be more than 10 characters
+                    </div>
+                    <div *ngIf="contact.errors.maxlength">
+                        Contact must be less than 30 characters
+                    </div>
+                </div>
+            </div>
+            <a routerlink="/" > 
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
+    </div>
+</div>

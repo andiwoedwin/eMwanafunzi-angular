@@ -1,0 +1,12 @@
+img{
+    height: 35px;
+    width: 35px;
+}
+strong{
+    color: orange;
+    padding-right: 30px;
+}
+a{
+    color: navy;
+    font-weight: bold;
+}

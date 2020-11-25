@@ -1,0 +1,74 @@
+<!-- Category Illustration -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="wrapper">
+                <img src="https://c4.wallpaperflare.com/wallpaper/224/123/785/berries-the-sweetness-strawberry-pie-wallpaper-preview.jpg">   
+            </div>
+        </div>
+    </div>
+<!-- End of Category Illustration -->
+
+<section>
+    <div class="spacer">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="row shop-listing">
+              <div class="col-lg-4" *ngFor="let product of products">
+                <div class="card shop-hover border-0">
+                    <img src="http://localhost:4000/{{image}}" alt="wrapkit" class="img-fluid" />
+                    <div class="card-img-overlay align-items-center">
+                   </div>
+                </div>
+                <div class="card border-0">
+                <h4>{{product.name}}</h4>            
+                  <h5 class="font-medium m-b-30">
+                    ${{product.price}}
+                  </h5>
+                </div>
+                <!-- <button routerLink="/cart"><i class="fas fa-shopping-cart"></i>Add to Cart</button> -->
+                <button (click)="_addItemToCart(product._id, 1)"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <script>
+      window.onload = function(e){
+        var divimg=document.getElementById('image');
+        fetch(`http://localhost:4000`)
+            .then(res => res.json())
+            .then(data =>{
+            for(let i=0;i<data.items.length;i++){
+            divimg.innerHTML+=`<img src="${data.items[i].image}" style="width: 100%; height: 635px;">`
+            console.log(data.items)
+            }
+            }).catch((e)=>console.log(e))
+        }
+
+  </script> -->
+</div>
+<br><br><br>
+
+
+
+  
+  
+
+<!-- Start of Shopping Grid -->
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor='let shop of shops'>
+            <div class="item">
+                <img src="{{shop.image}}" alt="item">
+                
+                <p>Ksh {{shop.cost}}-{{shop.quantity}}</p>
+                </div>
+        </div>       
+    </div>
+    <app-cart [product]="product"></app-cart>
+</div> -->
+<!-- End of Shopping Grid -->

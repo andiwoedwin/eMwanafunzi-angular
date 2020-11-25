@@ -1,0 +1,46 @@
+<div  style="padding-top: 50px;padding-bottom: 50px; overflow: hidden;" >
+    <div class="row">
+        <div class="col-xl-4"></div>
+        <div class="col-xl-4">
+            <div class="card" >
+                <div class="card-header">
+                    <h3 class="text-center font-weight-bold">Sign Up</h3>
+                </div>
+                <div>
+                    <form class="text-center border border-light p-5">
+                        <!-- E-mail -->
+                        <input [(ngModel)]="register.username" [ngModelOptions]="{standalone: true}" type="text" id="defaultRegisterFormUsername" class="form-control mb-4" placeholder="Username">
+                        <!-- E-mail -->
+                        <input  [(ngModel)]="register.email" [ngModelOptions]="{standalone: true}" type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <!-- Password -->
+                        <input  [(ngModel)]="register.password" [ngModelOptions]="{standalone: true}" type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+                        <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                          At least 8 characters and 1 digit
+                        </small>
+                        <!-- Sign up button -->
+                        <button (click)="registerUser()" class="btn " type="submit">Sign Up</button><br>
+                        <!-- login -->
+                        <small>Already have an account?
+                          <a href="/login">Log in </a>
+                        </small>
+                        <hr>
+                        <!-- Terms of service -->
+                        <small>By clicking
+                          <em>Sign up</em> you agree to our
+                          <a href="" target="_blank">terms of service</a></small>
+                            <!-- Form validation -->
+                          <!-- <label for="login">Login:</label>
+                          <input id="login" formControlName="login">
+                          <button [disabled]="form.invalid || form.pending">
+                            Send
+                            <span *ngIf="form.get('login').pending"> (searching)</span>
+                          </button>
+                          <p style="color: red" *ngIf="form.get('login').errors?.userNameExists">Not available</p>
+                          <hr>
+                          <small>NOTE: Bret, Samantha, Karianne are already taken. Try them</small> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

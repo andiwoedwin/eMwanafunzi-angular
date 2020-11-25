@@ -12,6 +12,10 @@ import { PaymentComponent } from './modules/component/payment/payment.component'
 import { DeliveryComponent } from './modules/component/delivery/delivery.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+// import { ShopFComponent } from '../app/shop-f/shop-f.component';
+import { ShopGComponent } from '../app/shop-g/shop-g.component';
+
+
 
 
 
@@ -28,7 +32,11 @@ const routes: Routes = [
   { path: 'payment', component:PaymentComponent},
   { path: 'delivery', component:DeliveryComponent},
   { path: 'register', component:RegisterComponent},
-  { path: 'login', component:LoginComponent}
+  { path: 'login', component:LoginComponent},
+  // { path: 'shop-f', component:ShopFComponent},
+  { path: 'shop-g', component:ShopGComponent}
+
+
 
 ];
 

@@ -24,17 +24,20 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     this.authService.login(this.f.username.value, this.f.password.value).pipe(first()).subscribe(
       response => {
-        Swal.fire({
-          icon: 'success',
-          text: ' successfully logged in!'
-        })
+        // Swal.fire({
+        //   icon: 'success',
+        //   text: ' successfully logged in!'
+        // })
+        alert("Succesfully logged in!!");
+        // this.router.navigate(["login"])
         this.router.navigate([""])
       },
       error => {
-        Swal.fire({
-          icon: 'error',
-          text:  ' check your credentials!',
-        })
+        // Swal.fire({
+        //   icon: 'error',
+        //   text:  ' check your credentials!',
+        // })
+        alert("Enter required credentials")
       }
     )
   }

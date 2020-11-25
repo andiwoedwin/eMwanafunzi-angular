@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr ));
+    text-align: center;
+  }
+  span {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  span:hover {
+    background-color: white;
+    opacity: 0.2;
+  }
+  span {
+    background-color: #5B8C5A;
+    color: #fff;
+  }
+  a{
+    position: relative;
+    margin-bottom: 50px;
+    margin-right:0;
+    width: 270px;
+    height: 350px;
+    display: block;
+    background-size: 300px;
+  }

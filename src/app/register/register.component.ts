@@ -30,11 +30,13 @@ export class RegisterComponent implements OnInit {
         this.router.navigate(["login"])
       },
       error => {
-        Swal.fire({
-          icon: 'error',
-          title: this.register.username,
-          text:  'already registered user!',
-        })
+        // Swal.fire({
+        //   icon: 'error',
+        //   title: this.register.username,
+        //   text:  'already registered user!',
+
+        // })
+        alert("the user is already registered")
       }
     )
   }

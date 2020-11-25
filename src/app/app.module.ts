@@ -19,6 +19,8 @@ import { PaymentComponent } from './modules/component/payment/payment.component'
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { ShopFComponent } from './shop-f/shop-f.component';
+import { ShopGComponent } from './shop-g/shop-g.component';
 // import { HttpClientModule } from '@angular/common/http';
 
 
@@ -40,6 +42,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PaymentComponent,
     LoginComponent,
     RegisterComponent,
+    // ShopFComponent,
+    ShopGComponent,
    
   ],
   imports: [

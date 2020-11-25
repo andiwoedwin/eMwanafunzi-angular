@@ -21,11 +21,12 @@ export class RegisterComponent implements OnInit {
   registerUser(){
     this.registerService.registerUser(this.register).subscribe(
       response => {
-        Swal.fire({
-          icon: 'success',
-          title: this.register.username ,
-          text: ' successfully registered!',
-        })
+        // Swal.fire({
+        //   icon: 'success',
+        //   title: this.register.username ,
+        //   text: ' successfully registered!',
+        // })
+        alert("Succesfully registered!!");
         this.router.navigate(["login"])
       },
       error => {

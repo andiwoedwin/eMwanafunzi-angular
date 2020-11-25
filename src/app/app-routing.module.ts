@@ -17,18 +17,18 @@ import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
+  { path: '', component:HomeComponent},
   { path: 'shopA', component:ShopAComponent},
   { path: 'shopB', component:ShopBComponent},
   { path: 'shopC', component:ShopCComponent},
   { path: 'shopD', component:ShopDComponent},
   { path: 'shopE', component:ShopEComponent},
-  { path: '', component:HomeComponent},
   { path: 'view', component:ViewComponent},
   { path: 'cart', component:CartComponent},
   { path: 'payment', component:PaymentComponent},
   { path: 'delivery', component:DeliveryComponent},
   { path: 'register', component:RegisterComponent},
-  { path: 'login', component:LoginComponent},
+  { path: 'login', component:LoginComponent}
 
 ];
 

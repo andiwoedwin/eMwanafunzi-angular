@@ -44,12 +44,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
     HttpClientModule,
     // AppRoutingModule,
-    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

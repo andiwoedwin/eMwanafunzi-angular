@@ -16,7 +16,6 @@ export class RegisterComponent implements OnInit {
     this.register = {
       username: '',
       password: '',
-      email: ''
     };
   }
   registerUser(){
@@ -25,7 +24,7 @@ export class RegisterComponent implements OnInit {
         Swal.fire({
           icon: 'success',
           title: this.register.username ,
-          text: ' is  successfully registered!',
+          text: ' successfully registered!',
         })
         this.router.navigate(["login"])
       },
@@ -33,7 +32,7 @@ export class RegisterComponent implements OnInit {
         Swal.fire({
           icon: 'error',
           title: this.register.username,
-          text:  ' is already registered user!',
+          text:  'already registered user!',
         })
       }
     )

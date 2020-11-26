@@ -1,0 +1,63 @@
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark navy scrolling-navbar">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand waves-effect">
+      <img src="https://static.thenounproject.com/png/199618-200.png" alt="">
+      <strong>-Mwanafunzi</strong>
+    </a>
+    <!-- Collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a style="padding-top: 8px; color:white;" routerLink="/"><i class="fas fa-home" style="color: white;"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect" href="#" target="_blank"></a>
+        </li>
+        <li>
+          <div class="btn-group" mdbDropdown>
+            <a style="padding-top: 8px; padding-right: 15px; color:white;" mdbDropdownToggle type="button"
+              class="dropdown-toggle waves-light" mdbWavesEffect>
+              Category
+            </a>
+            <div class="dropdown-menu dropdown-primary">
+              <a class="dropdown-item" routerLink="shopA" style="color: navy;">Snacks</a>
+              <a class="dropdown-item" routerLink="shopB" style="color: navy;">Toiletries</a>
+              <a class="dropdown-item" routerLink="shopC" style="color: navy;">Books</a>
+              <a class="dropdown-item" routerLink="shopD" style="color: navy;">Stationery</a>
+              <a class="dropdown-item" routerLink="shopE" style="color: navy;">Uniform</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/cart" class="nav-link waves-effect">
+            <i class="fas fa-shopping-cart" style="color: white;"></i>
+            <span class="clearfix d-none d-sm-inline-block" style="color: white;" > Cart </span>
+          </a>
+        </li>
+      </ul>
+      <!-- Adding a search form  -->
+      <!-- <div class="col-sm-4 col-md-4">
+        <form class="navbar-form" role="search" action="">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Item">
+            <a type="submit" style="padding-left: 5px; padding-top: 8px ; color: navy;"><i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+        </form>
+      </div> -->
+      <!-- search form end -->
+      <a style="padding-top: 5px; padding-left: 100px; color: white;" routerLink="/login"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out
+      </a>
+      </div>
+  </div>
+</nav>
+
+<!-- Navbar -->

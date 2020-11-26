@@ -1,0 +1,65 @@
+<div class="background">
+    <div class="blur" style="height: 650px;">
+
+        <div>
+            <!-- <div  style="padding-top: 50px; overflow: hidden; padding-bottom: 50px;" > -->
+            <div class="row">
+                <div class="col-xl-4"></div>
+                <div class="col-xl-4">
+                    <div class="login-box">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="text-center font-weight-bold">Sign In</h3>
+                            </div>
+                            <div>
+                                <form [formGroup]="myform" (ngSubmit)="onSubmit()"
+                                    class="text-center border border-light p-5">
+                                    <!-- Email -->
+                                    <!-- <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail"> -->
+                                    <!-- Usename -->
+                                    <input type="text" formControlName="username" id="defaultRegisterFormUsername"
+                                        class="form-control mb-4" placeholder="Username">
+                                    <!-- Password -->
+                                    <input type="password" formControlName="password" id="defaultLoginFormPassword"
+                                        class="form-control mb-4" placeholder="Password">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <!-- Forgot password -->
+                                            <!-- <a href="">Forgot password?</a> -->
+                                        </div>
+                                    </div>
+                                    <!-- Sign in button -->
+                                    <button href="" class="btn btn-info" type="submit">Sign In</button><br>
+                                    <!-- Register -->
+                                    <small>Don't have an account?
+                                        <a href="/register">Register</a>
+                                    </small>
+                                    <a href="https://emwanafunzi.herokuapp.com/admin/" class="nav-link waves-effect">
+                                        <i class="fas fa-lock" style="color: white;"></i>
+                                        <span class="clearfix d-none d-sm-inline-block" style="color: white;"> Admin
+                                        </span>
+                                    </a>
+                                </form>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="checkbox">
+                                    <label>
+                                        <!-- <input type="checkbox"> I agree to the <a href="#">Terms and Conditions</a> -->
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->

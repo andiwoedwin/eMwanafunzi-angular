@@ -1,0 +1,39 @@
+.card{
+  background-color: rgba(245, 245, 245, 0);
+  color:white;
+  padding: 30px;
+  margin: 0 auto;
+  /* position: absolute; */
+  top: 50px;
+  
+  /* bottom:0;
+  left:0;
+  right:0;  */
+/*   
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 30px;
+  margin: 0 auto;
+  background-position: center -100px;
+  -webkit-filter: blur(0.5px) ; */
+ 
+    
+}
+
+h3{
+  color: white;
+}
+
+.background{
+  background-image: url('https://s3-sa-east-1.amazonaws.com/nova-website-sa/sa/wp-content/uploads/2019/06/09151743/all-primary-1200x502.jpg');
+  background-size: cover;
+
+}
+/* .blur{
+  backdrop-filter: blur(0.8px);
+  background: rgba(255,255,255,0.2);
+ 
+} */

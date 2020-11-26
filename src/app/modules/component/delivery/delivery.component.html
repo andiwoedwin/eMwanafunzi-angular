@@ -1,0 +1,125 @@
+<div style="height: 800px; padding-top: 80px;" class="container">
+    <div class="delivery-box">
+        <h2>Delivery Form</h2>
+        <form>
+            <div class="form-group">
+                <input
+                required
+                minlength="4"
+                maxlength="30"
+                ngModel
+                name="studentName"
+                #studentName="ngModel"
+                id="studentName"
+                type="text"
+                class="form-control">
+                <label for="studentName">Student Name</label>
+            </div>
+            <div
+                class="alert alert-danger"
+                *ngIf="studentName.touched && !studentName.valid">
+                <div *ngIf="studentName.errors.required">
+                    Invalid Input
+                </div>
+                <div *ngIf="studentName.errors.minlength">
+                    Invalid Input
+                </div>
+                <div *ngIf="studentName.errors.maxlength">
+                    Invalid Input
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="form-group">
+                    <input
+                    required
+                    minlength="4"
+                    maxlength="30"
+                    ngModel
+                    name="school"
+                    #school="ngModel"
+                    id="school"
+                    type="text"
+                    class="form-control">
+                    <label for="school">School</label>
+                </div>
+                <div
+                    class="alert alert-danger"
+                    *ngIf="school.touched && !studentName.valid">
+                    <div *ngIf="school.errors.required">
+                        Invalid Input
+                    </div>
+                    <div *ngIf="school.errors.minlength">
+                        Invalid Input
+                    </div>
+                    <div *ngIf="school.errors.maxlength">
+                        Invalid Input
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <input
+                    required
+                    minlength="4"
+                    maxlength="30"
+                    ngModel
+                    name="idStudent"
+                    #idStudent="ngModel"
+                    id="idStudent"
+                    type="text"
+                    class="form-control">
+                    <label for="idStudent">Student ID</label>
+                </div>
+                <div
+                    class="alert alert-danger"
+                    *ngIf="idStudent.touched && !studentName.valid">
+                    <div *ngIf="idStudent.errors.required">
+                        Invalid Input
+                    </div>
+                    <div *ngIf="idStudent.errors.minlength">
+                        Invalid Input
+                    </div>
+                    <div *ngIf="idStudent.errors.maxlength">
+                        Invalid Input
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <input
+                    required
+                    minlength="10"
+                    maxlength="12"
+                    ngModel
+                    name="contact"
+                    #contact="ngModel"
+                    id="contact"
+                    type="text"
+                    class="form-control">
+                    <label for="contact">Parent Contact</label>
+                </div>
+                <div
+                    class="alert alert-danger"
+                    *ngIf="contact.touched && !contact.valid">
+                    <div *ngIf="contact.errors.required">
+                        Invalid Input
+                    </div>
+                    <div *ngIf="contact.errors.minlength">
+                        Invalid Input
+                    </div>
+                    <div *ngIf="contact.errors.maxlength">
+                        Invalid Input
+                    </div>
+                </div>
+            </div>
+            <a routerlink="/" > 
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
+    </div>
+</div>

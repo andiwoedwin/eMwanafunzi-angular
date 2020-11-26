@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"
+html,
+body,
+header,
+.carousel {
+  height: 60vh;
+}
+body{
+  background-image: url(https://cutewallpaper.org/21/light-gray-wallpapers/HD-Backgrounds-Solid-Color-PixelsTalk.Net.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .carousel {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .carousel {
+    height: 100vh;
+  }
+}
+.view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}
+*{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
